@@ -14,14 +14,14 @@ class SudokuGUI:
         # Create buttons
         self.create_buttons()
 
-    def create_grid(self):
+ def create_grid(self):
         for i in range(9):
             for j in range(9):
 
                 if (i // 3 + j // 3) % 2 == 0:
-                    bg_color = "light blue"
+                    bg_color = "white"
                 else:
-                    bg_color = "light pink"
+                    bg_color = "light gray"
 
                 # Create an Entry widget for each cell
                 cell = tk.Entry(self.root, width=3, font=('Times new Roman', 18), justify='center', bg=bg_color)
@@ -29,7 +29,7 @@ class SudokuGUI:
                 self.cells[i][j] = cell
 
     def create_buttons(self):
-        # Frame to hold the buttons
+    
         button_frame = tk.Frame(self.root)
         button_frame.grid(row=9, column=0, columnspan=9, pady=10)
 
@@ -64,7 +64,6 @@ class SudokuGUI:
                 self.cells[i][j].delete(0, tk.END)
 
     def solve(self):
-        # Placeholder for solving the Sudoku puzzle
         messagebox.showinfo("Solve", "Solve the Sudoku puzzle")
 
 if __name__ == "__main__":
