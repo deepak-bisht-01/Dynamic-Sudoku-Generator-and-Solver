@@ -14,7 +14,7 @@ sudoku_app/
 
 File Descriptions:
 
-main.py
+1) main.py
 
   Launches the GUI using tkinter.
   Displays a 9x9 Sudoku board using Entry widgets.
@@ -22,13 +22,13 @@ main.py
   Handles coloring of cells (generated, user input, wrong answers).
   Communicates with the generator and solver modules.
 
-sudoku_generator.py
+2) sudoku_generator.py
 
   Builds a full valid Sudoku board.
   Randomly removes a number of cells to make a puzzle.
   Returns a puzzle board for the GUI to display.
 
-sudoku_solver.py
+3) sudoku_solver.py
 
   Reads the GUI entries into a 2D list.
   Solves the puzzle using backtracking.
