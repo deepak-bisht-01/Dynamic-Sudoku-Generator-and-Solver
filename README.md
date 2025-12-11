@@ -1,12 +1,23 @@
-# Dynamic-Sudoku-Generator-and-Solver
+# Dynamic Sudoku Generator and Solver
 
-**Programming language**: Python
+**Programming Language**: Python
 
-This project is to create an interactive Sudoku solver and generator for NxN puzzles. With Python and Tkinter as the GUI, the solver uses Backtracking, Constraint Propagation, and Branch and Bound algorithms to solve puzzles efficiently. Users can manually enter puzzles, create random puzzles, and visualize solving step-by-step. Optimizations for quick solving and uniqueness of puzzles are also included. Libraries such as NumPy are utilized for effective grid management.
+This project is an interactive Sudoku application that allows users to generate random Sudoku puzzles, solve them manually, or watch the computer solve them step-by-step. Built with Python and Tkinter for the GUI, it provides an engaging way to play and learn Sudoku.
 
----
+## 🎯 Key Features
 
-📁 **File Structure**
+- **Sudoku Generation**: Create random, solvable Sudoku puzzles with one click
+- **Multiple Difficulty Levels**: Choose from Easy, Medium, or Hard difficulty settings
+- **Interactive Solving**: Manually solve puzzles with real-time input validation (only 0-9 allowed)
+- **Auto-Solving**: Watch the computer solve any puzzle using backtracking algorithm with visual feedback
+- **Step-by-Step Visualization**: See how the solver works with the pause/resume feature
+- **Input Validation**: Ensures only valid digits (0-9) can be entered in cells
+- **Visual Feedback**: 
+  - Generated numbers appear in bold black
+  - User inputs appear in blue
+  - Incorrect solutions are highlighted in red
+
+## 📁 Project Structure
 
 ```
 
